@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+
+*, *::after, *::before {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: inherit;
+}
+body {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+    font-size: 1.6rem;
+}
+img {
+    width: 100%;
+    height: auto;
+}
+blockquote {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+/*This apply to 1, 2 and 3 card*/
+@media (min-width: 768px) {
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        gap: 1rem;
+    }    
+}
+
+.container {
+    padding: 4rem;
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+.avatar {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.flex {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin: 0 1rem;
+}
+
+/*1 Card*/
+.testimonial__speech-bubble {
+    padding: 1.5rem;
+    border-radius: .5rem;
+}
+.testimonial__speech-bubble .desc {
+    background-color: #222;
+    color: #fff;
+    border-radius: 1rem;
+    padding: 1rem 1.5rem;
+}
+
+/*2 Card*/
+.testimonial__rounded-border {
+    border: 2px solid #222;
+    border-radius: 1rem;
+    background-color: #f9f9f9;
+}
+.testimonial__rounded-border .desc {
+    padding: 1.2rem 2.5rem;
+}
+
+/*3 Card*/
+.testimonial__image {
+    margin: 4rem 0;
+    width: 80%;
+}
+.testimonial__image-avatar {
+    width: 30rem;
+    border-radius: 2rem;
+}
+.testimonial__image-highlight {
+    background-color: #181212;
+    padding: 2rem;
+    border-radius: 1rem;
+    color: #fff;
+}
+.stars {
+    color: #eedd41;
+    font-size: 2.5rem;
+    letter-spacing: 1px;
+}
+h3 {
+    font-size: 2.5rem;
+}
+
+/*4 Card*/
+.testimonial__carousel {
+    border: 2px solid #222;
+    text-align: center;
+}
+@media (min-width: 768px) {
+    .testimonial__quote {
+    padding: 4rem 18rem;
+    
+}
+}
+
+.testimonial__nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+.testimonial__avatar-group {
+    display: flex;
+    gap: 1rem;
+}
+.testimonial__group-avatar {
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    object-fit: cover;
+    margin: 2rem 0
+}
+.testimonial__btn {
+    color: #222;
+    border: none;
+    background-color: transparent;
+    padding: 1rem 2rem;
+    cursor: pointer;
+    font-weight: 600;
+}
+.transparent {
+    opacity: 0.5;
+}
+.testimonial__authors {
+    margin: 2rem 0;
+}

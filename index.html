@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testimonial Cards</title>
+
+    <!--CSS-->
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
+     <!--SEO Meta tags-->
+    <meta name="description" content="Gabriel Noss - A basic HTML, CSS, Cards, Testimonials, Website">
+    <meta name="keywords" content="Website, SEO, HTML, Page, Frontend, Developer">
+    <meta name="author" content="Gabriel. A Noss Silva">
+    
+    <!--Open Graph (OG) Tags-->
+    <meta property="og:title" content="Gabriel Noss | Basic HTML, CSS, Semantic, Cards, Testimonials">
+    <meta property="og:description" content="Gabriel Noss - A Testimonial Cards example using HTML and CSS">
+    <meta property="og:type" content="website">
+</head>
+<body>
+    <main class="container">
+        <section class="testimonials__cards grid">
+            <!--First Cards-->
+            <blockquote class="testimonial__speech-bubble">
+                <div class="desc">
+                    <p>I have been solving all the project ideas on roadmap.sh and I am surprised how far I have come from where I started.</p><br>
+                <span>Highly recommended!</span>
+                </div>            
+            <footer>
+                <figure class="flex">
+                    <img src="img/Artem.jpeg" alt="Artem" class="avatar">
+                    <figcaption>
+                        <p class="name">Artem Jones</p>
+                        <span class="role">Junior Frontend Developer</span>
+                    </figcaption>
+                </figure>
+            </footer>
+            </blockquote>
+
+             <!-- Testimonial 2 -->
+              <blockquote class="testimonial__rounded-border">
+                <div class="desc">
+                    <p>Since starting my career in 2021, I have only followed one resource, roadmap.sh. It truly helped me go from 0 to having a job and changing the financial trajectory of my family.</p>
+                </div>
+                    <footer>
+                        <figure class="flex">
+                            <img src="img/Artem.jpeg" alt="Artem Jones photo" class="avatar">
+                            <figcaption>
+                                <p class="name">Artem Jones</p>
+                                <span class="role">Junior Frontend Developer</span>
+                            </figcaption>
+                        </figure>
+                    </footer>
+              </blockquote>
+        </section>
+
+        <!-- Testimonial 3: Image only -->
+         <section class="testimonial__image grid">
+            <figure>
+                <img src="img/thirdPerson.jpeg" alt="Jackie Mackle photo" class="testimonial__image-avatar">
+            </figure>
+            <blockquote class="testimonial__image-highlight">
+                <div class="stars" aria-label="5 stars">
+                    ★★★★★
+                </div>
+                    <h3 class="testimonial__avatar-name">Jackie Mackle</h3>
+                    <span class="testimonial__avatar-role">Engineering Manager</span>
+              
+                <p class="testimonial__text">
+                    I find myself recommending roadmap.sh to all the internees or junior developers. It's a great way to skill up and grow in your career.
+                </p>
+            </blockquote>
+
+         </section>
+
+         <!-- Testimonial 4: Highlighted, with stars -->
+          <section class="testimonial__carousel">
+              <blockquote class="testimonial__quote">
+                  <p>roadmap.sh is an incredible resource. I was fortunate to discover it during my university days in 2018. Back then, it was just a single repository with three images. It's amazing to see how much impact it has had on millions of lives since then.</p>
+              </blockquote>
+              <div class="testimonial__nav">
+                  <button class="testimonial__btn" aria-label="Previous">&lt;</button>
+                  <div class="testimonial__avatar-group">
+                    <img src="img/Artem.jpeg" alt="Artem Jones photo" class="testimonial__group-avatar transparent">
+                    <img src="img/Artem.jpeg" alt="Artem Jones photo" class="testimonial__group-avatar">
+                    <img src="img/Artem.jpeg" alt="Artem Jones photo" class="testimonial__group-avatar transparent">
+                  </div>
+                  <button class="testimonial__btn" aria-label="Next">&gt;</button>
+              </div>
+              <p class="testimonial__authors">Artem Jones</p>
+          </section>
+    </main>
+</body>
+</html>
